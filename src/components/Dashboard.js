@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import "./dashboard.css"
 import PhoneIcon from '@mui/icons-material/Phone';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
@@ -18,12 +17,18 @@ export default function Dashboard() {
     
     <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" 
    >
-      <Tab icon={<PhoneIcon />} label="RECENTS"  style={{
+      <Tab icon={<PhoneIcon />} label="Feed"  style={{
       color:"rebeccapurple",
-      marginLeft:"40%"
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center"
+
     }}  />
-      <Tab icon={<FavoriteIcon />} label="FAVORITES" />
-      <Tab icon={<PersonPinIcon />} label="NEARBY" />
+      <Tab icon={<FavoriteIcon />} label="My Feed" />
+      <Tab icon={<FavoriteIcon />} label="My Profile" />
+      <Tab icon={<FavoriteIcon />} label="Saved Post" />
+      <Tab icon={<PersonPinIcon />} label="Task Dashboard" />
+      <Tab icon={<PersonPinIcon />} label="Task Manager" />
     </Tabs>
    
   );
