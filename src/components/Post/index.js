@@ -21,18 +21,41 @@ const Post = () => {
             <div className="post">
                 <div className="info">
                     <div className="user">
-                        <div className="profile-pic"><img src="img/cover 1.png" alt=""/></div>
-                        <p className="username">modern_web_channel</p>
+                        <div className="profile-pic"><img src="" alt=""/></div>
+                        <p className="username">Page Name</p>
                     </div>
-                    <img src="img/option.PNG" className="options" alt=""/>
+                    <img src="https://i.imgur.com/UXdKE3o.jpg" className="options" alt=""/>
                 </div>
-                <img src="img/cover 1.png" className="post-image" alt=""/>
+                <img src="https://i.imgur.com/UXdKE3o.jpg" className="post-image" alt=""/>
                 <div className="post-content">
                     <div className="reaction-wrapper">
                         <img src="img/like.PNG" className="icon" alt=""/>
                         <img src="img/comment.PNG" className="icon" alt=""/>
                         <img src="img/send.PNG" className="icon" alt=""/>
                         <img src="img/save.PNG" className="save icon" alt=""/>
+                        <div class="d-flex justify-content-between align-items-center">
+                <div
+                  onClick={() => setliked(!liked)}
+                  style={{ cursor: "pointer" }}
+                  class="d-flex flex-row icons d-flex align-items-center"
+                >
+                  {liked ? <ThumbUpIcon /> : <ThumbUpOffAltIcon />}
+                </div>
+                <div
+                  onClick={() => alert("Commented!")}
+                  style={{ cursor: "pointer" }}
+                  class="d-flex flex-row icons d-flex align-items-center"
+                >
+                  <CommentIcon />
+                </div>
+                <div
+                  onClick={() => setsaved(!saved)}
+                  style={{ cursor: "pointer" }}
+                  class="d-flex flex-row muted-color"
+                >
+                  {saved ? <TurnedInIcon /> : <TurnedInNotIcon />}
+                </div>
+              </div>
                     </div>
                     <p className="likes">1,012 likes</p>
                     <p className="description"><span>username </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?</p>
