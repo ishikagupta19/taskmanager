@@ -10,6 +10,7 @@ function App() {
       <Navb/>
       <Dashboard/>
       <Post/>
+      <Post/>
     </div>
   );
 }
