@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Post from '../Post';
+
 
 const MyFeed = () => {
   return (
-    <div>MyFeed</div>
+    <>
+      
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ import Icon from "../images/icon.png";
 const Navb = () => {
     return (
         <>
-        <Navbar bg="dark" variant="dark" style={{fontSize:25}}>
+        <Navbar className="fixed-top" bg="dark" variant="dark" style={{fontSize:25}}>
         <Container>
         <Navbar.Brand href="#home">
             <img
