@@ -1,0 +1,30 @@
+.inputarea textarea{
+    width: 55%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 1px;
+    cursor: pointer;
+    padding: 12px;
+    
+}
+
+.postarea{
+   width: 100%;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: aliceblue;
+   height: 100px;
+}
+
+.postarea textarea{
+    cursor: text;
+}
+
+.postbutton{
+    border-radius: 5px;
+    width: 100px;
+    background-color: aliceblue;
+    color: brown;
+    
+    padding: 5px;
+}
